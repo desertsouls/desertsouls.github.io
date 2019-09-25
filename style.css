@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+@font-face {
+    src: url("fonts/FuturaStd-Book.otf");
+    font-family: futura;
+}
+
+html,
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+nav {
+    width: 100%;
+    height: 4em;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    float:left;
+    padding: 0.4em 0 0.5em 0.5em;
+    position: relative;
+}
+
+.logo-content {
+    width: 4em;
+}
+
+ul {
+	display: block;
+	width: 100%;
+	list-style-type: none;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 0em;
+}
+
+ul li a {
+	display: block;
+    padding: 1.2em 1em 0em 0em;
+}
+
+.social-default {
+    width: 1.5em;
+}
+
+a {
+    color: black;
+}
+
+.footer {
+    padding: 2em 0 0 0;
+}
+
+.footer-info {
+    padding: 3em;
+    background-color: black;
+}
+
+.footer-info p {
+    color: white;
+	font-family: futura;
+    font-size: 20px;
+	text-align: center;
+    
+}
+
+/*index.html*/
+.header-img { 
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+    padding: 4em 0em 0em;
+}
+
+.bio-content {
+    width: 100%;
+}
+
+.bio-content p {
+    padding: 32px;
+	font-family: futura;
+	text-align: left;
+    color: black;
+    line-height: 1.4;
+}
+
+.video {
+    padding: 0 2em;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.impressum-content {
+    padding: 2em 0 0 0;
+}
+
+.impressum-content a {
+    display: block;
+    text-align: center;
+    font-family: futura;
+}
+
+/*imprint.html*/
+.imprint-content {
+    width: 100%;
+    padding: 4em 0 0 0;
+}
+
+.imprint-content h1 {
+    font-size: 18px;
+    padding: 2em 2em 0 2em;
+    font-family: futura;
+}
+
+.imprint-content p {
+    padding: 1em 36px;
+	font-family: futura;
+	text-align: left;
+    color: black;
+    line-height: 1.4;  
+}
+
+@media only screen and (min-width: 768px) {
+    .bio-content p {
+        padding: 3em;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;
+    }
+    
+    .video {
+        padding: 0 3em;
+    }
+    
+    .impressum-content {
+        padding: 3em 0 0 0;
+    }
+    
+    .footer {
+        padding: 3em 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .bio-content p {
+        padding: 4em 11em;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;
+    }
+    
+    .video {
+        padding: 0 11em;
+    }
+    
+    .impressum-content {
+        padding: 4em 0 0 0;
+    }
+    
+    .footer {
+        padding: 4em 0 0 0;
+    }
+    
+    .imprint-content h1 {
+        font-size: 18px;
+        padding: 3em 198px 0 198px;
+        font-family: futura;
+    }
+
+    .imprint-content p {
+        padding: 1em 198px;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;  
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .bio-content p {
+        padding: 5em 26.5em;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;
+    }
+    
+    .video {
+        padding: 0 26.5em;
+    }
+    
+    .impressum-content {
+        padding: 5em 0 0 0;
+    }
+    
+    .footer {
+        padding: 5em 0 0 0;
+    }
+    
+    .imprint-content h1 {
+        font-size: 18px;
+        padding: 3em 360px 0 360px;
+        font-family: futura;
+    }
+
+    .imprint-content p {
+        padding: 1em 360px;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;  
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .bio-content p {
+        padding: 5em 38.47em;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;
+    }
+    
+    .video {
+        padding: 0 38.47em;
+    }
+    
+    .footer {
+        padding: 5em 0 0 0;
+    }
+    
+    .imprint-content h1 {
+        font-size: 18px;
+        padding: 3em 560px 0 560px;
+        font-family: futura;
+    }
+
+    .imprint-content p {
+        padding: 1em 560px;
+        font-family: futura;
+        text-align: left;
+        color: black;
+        line-height: 1.4;  
+    }
+}
