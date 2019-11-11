@@ -5,6 +5,11 @@
     font-family: futura;
 }
 
+@font-face {
+    src: url("fonts/FuturaStd-Bold.otf");
+    font-family: futuraBold;
+}
+
 html,
 html * {
     margin: 0;
@@ -63,7 +68,7 @@ ul li a {
 }
 
 .music h1 {
-    font-family: "Futura Std ExtraBold";
+    font-family: futuraBold;
     font-size: 32px;
     color: gold;
     display: block;
@@ -112,7 +117,7 @@ ul li a {
 }
 
 .video h1 {
-     font-family: "Futura Std ExtraBold";
+     font-family: futuraBold;
      font-size: 32px;
     color: lightseagreen;
      display: block;
@@ -152,7 +157,7 @@ ul li a {
 }
 
 .shows h1 {
-    font-family: "Futura Std ExtraBold";
+    font-family: futuraBold;
     font-size: 32px;
     color: lightcoral;
     display: block;
@@ -175,7 +180,7 @@ ul li a {
 }
 
 .impressum-content a {
-    font-family: "Futura Std ExtraBold";
+    font-family: futuraBold;
     font-size: 32px;
     color: seagreen;
     display: block;
