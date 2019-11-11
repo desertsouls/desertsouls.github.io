@@ -23,7 +23,7 @@ nav {
 }
 
 .logo {
-    float:left;
+    float: left;
     padding: 0.4em 0 0.5em 0.5em;
     position: relative;
 }
@@ -33,9 +33,9 @@ nav {
 }
 
 ul {
-	display: block;
-	width: 100%;
-	list-style-type: none;
+    display: block;
+    width: 100%;
+    list-style-type: none;
     text-align: right;
 }
 
@@ -45,68 +45,89 @@ ul li {
 }
 
 ul li a {
-	display: block;
-    padding: 1.2em 1em 0em 0em;
+    display: block;
+    padding: 1em 1em 0em 0em;
 }
 
 .social-default {
-    width: 1.5em;
-}
-
-a {
-    color: black;
-}
-
-.footer {
-    padding: 2em 0 0 0;
-}
-
-.footer-info {
-    padding: 3em;
-    background-color: black;
-}
-
-.footer-info p {
-    color: white;
-	font-family: futura;
-    font-size: 20px;
-	text-align: center;
-    
+    width: 2em;
 }
 
 /*index.html*/
 .header-img { 
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-    padding: 4em 0em 0em;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding: 4em 0 0 0;
 }
 
-.bio-content {
+.music h1 {
+    font-family: "Futura Std ExtraBold";
+    font-size: 32px;
+    color: gold;
+    display: block;
+    text-align: center;
+    padding: 2em 0 1em 0;
+}
+
+.vinyl-container {
+    height: auto;
+    max-width: 100%;
+    padding: 0 2em 2em 2em;
+}
+
+.vinyl-img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
 }
 
-.bio-content p {
-    padding: 32px;
-	font-family: futura;
-	text-align: left;
+.vinyl-container p {
+    font-family: futura;
+    text-align: center;
+    padding-top: 1em;
+    line-height: 2;
+}
+
+.vinyl-container a {
     color: black;
-    line-height: 1.4;
+}
+
+.spotify-container {
+    display: block;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.spotify-container p
+{
+    font-family: futura;
+    text-align: center;
+    padding-top: 2em;
 }
 
 .video {
-    padding: 0 2em;
+    padding: 0 2em 4em 2em;
 }
 
-.iframe-container {
+.video h1 {
+     font-family: "Futura Std ExtraBold";
+     font-size: 32px;
+    color: lightseagreen;
+     display: block;
+     text-align: center;
+     padding: 2em 0 1em 0;
+ }
+
+.turtle {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
 }
 
-.iframe-container iframe {
+.turtle iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -114,20 +135,57 @@ a {
     height: 100%;
 }
 
+.kegelbahn {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.kegelbahn iframe {
+    position: absolute;
+    padding-top: 2em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shows h1 {
+    font-family: "Futura Std ExtraBold";
+    font-size: 32px;
+    color: lightcoral;
+    display: block;
+    text-align: center;
+    padding: 2em 0 1em 0;
+}
+
+.shows-container {
+    display: block;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.shows-container p {
+    font-family: futura;
+}
+
 .impressum-content {
-    padding: 2em 0 0 0;
+    padding: 3em;
 }
 
 .impressum-content a {
+    font-family: "Futura Std ExtraBold";
+    font-size: 32px;
+    color: seagreen;
     display: block;
     text-align: center;
-    font-family: futura;
 }
 
 /*imprint.html*/
 .imprint-content {
     width: 100%;
-    padding: 4em 0 0 0;
+    padding: 4em 0 4em 0;
 }
 
 .imprint-content h1 {
@@ -138,59 +196,42 @@ a {
 
 .imprint-content p {
     padding: 1em 36px;
-	font-family: futura;
-	text-align: left;
+    font-family: futura;
+    text-align: left;
     color: black;
     line-height: 1.4;  
 }
 
+.footer-info {
+    padding: 3em;
+    background-color: black;
+}
+
+.footer-info p {
+    color: white;
+    font-family: futura;
+    font-size: 20px;
+    text-align: center;
+
+}
+
 @media only screen and (min-width: 768px) {
-    .bio-content p {
-        padding: 3em;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;
+    .vinyl-container {
+        height: auto;
+        max-width: 100%;
+        padding: 0 10em 2em 10em;
     }
-    
+
     .video {
-        padding: 0 3em;
-    }
-    
-    .impressum-content {
-        padding: 3em 0 0 0;
-    }
-    
-    .footer {
-        padding: 3em 0 0 0;
+        padding: 0 10em 4em 10em;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .bio-content p {
-        padding: 4em 11em;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;
-    }
-    
-    .video {
-        padding: 0 11em;
-    }
-    
-    .impressum-content {
-        padding: 4em 0 0 0;
-    }
-    
-    .footer {
-        padding: 4em 0 0 0;
-    }
-    
     .imprint-content h1 {
-        font-size: 18px;
-        padding: 3em 198px 0 198px;
-        font-family: futura;
+    font-size: 18px;
+    padding: 3em 198px 0 198px;
+    font-family: futura;
     }
 
     .imprint-content p {
@@ -203,24 +244,14 @@ a {
 }
 
 @media only screen and (min-width: 1280px) {
-    .bio-content p {
-        padding: 5em 26.5em;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;
+    .vinyl-container {
+        height: auto;
+        max-width: 100%;
+        padding: 0 360px 2em 360px;
     }
-    
+
     .video {
-        padding: 0 26.5em;
-    }
-    
-    .impressum-content {
-        padding: 5em 0 0 0;
-    }
-    
-    .footer {
-        padding: 5em 0 0 0;
+        padding: 0 360px 4em 360px;
     }
     
     .imprint-content h1 {
@@ -239,22 +270,16 @@ a {
 }
 
 @media only screen and (min-width: 1920px) {
-    .bio-content p {
-        padding: 5em 38.47em;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;
+    .vinyl-container {
+        height: auto;
+        max-width: 100%;
+        padding: 0 560px 2em 560px;
     }
-    
+
     .video {
-        padding: 0 38.47em;
+        padding: 0 560px 4em 560px;
     }
-    
-    .footer {
-        padding: 5em 0 0 0;
-    }
-    
+
     .imprint-content h1 {
         font-size: 18px;
         padding: 3em 560px 0 560px;
