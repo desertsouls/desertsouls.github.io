@@ -180,9 +180,8 @@ ul li a {
 }
 
 .impressum-content a {
-    font-family: futuraBold;
-    font-size: 32px;
-    color: seagreen;
+    font-family: futura;
+    color: black;
     display: block;
     text-align: center;
 }
