@@ -16,9 +16,6 @@ html * {
     padding: 0;
 }
 
-body {
-}
-
 nav {
     width: 100%;
     height: 4em;
@@ -27,53 +24,89 @@ nav {
     z-index: 1;
 }
 
-.logo {
-    float: left;
-    padding: 0.4em 0 0.5em 0.5em;
-    position: relative;
-}
-
 .logo-content {
-    width: 4em;
+    width: 3em;
+    padding-top: 0.5em;
 }
 
-ul {
-    display: block;
+.social {
+    width: 1.6em;
+    padding-top: 1.2em;
+}
+
+.type {
+    display: none;
+}
+
+.type-content {
+    margin-top: 1.4em;
+    font-family: futuraBold;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+}
+
+.menu ul {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
     width: 100%;
-    list-style-type: none;
-    text-align: right;
+    text-align: center;
+    text-decoration: none;
 }
 
-ul li {
+.menu ul li {
     display: inline-block;
-    line-height: 0em;
 }
 
-ul li a {
+.menu ul li a {
+    padding: 0em 1em 0 1em;
     display: block;
-    padding: 1em 1em 0em 0em;
-}
-
-.social-default {
-    width: 2em;
 }
 
 /*index.html*/
-.header-img { 
+.header-img {
+    padding-top: 4em;
     width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    padding: 4em 0 0 0;
 }
 
-.music h1 {
+h1 {
     font-family: futuraBold;
     font-size: 32px;
-    color: gold;
     display: block;
     text-align: center;
     padding: 2em 0 1em 0;
+}
+
+.about {
+    //background-color: gold;
+}
+
+.about-container {
+    display: block;
+    padding: 0em 2em 0em 2em;
+}
+
+.about-container p {
+    font-family: futura;
+    color: black;
+    line-height: 1.8;
+}
+
+.swit {
+    color: black;
+}
+
+.music {
+    //background-color: lightseagreen;
 }
 
 .vinyl-container {
@@ -85,14 +118,17 @@ ul li a {
 .vinyl-img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
 }
 
-.vinyl-container p {
+.music p {
     font-family: futura;
-    text-align: center;
-    padding-top: 1em;
+    padding: 0 2em 2em;
     line-height: 2;
+}
+
+.music a {
+    color: black;
 }
 
 .vinyl-container a {
@@ -102,28 +138,12 @@ ul li a {
 .spotify-container {
     display: block;
     text-align: center;
-    padding-bottom: 2em;
-}
-
-.spotify-container p
-{
-    font-family: futura;
-    text-align: center;
-    padding-top: 2em;
 }
 
 .video {
     padding: 0 2em 4em 2em;
+    //background-color: lightcoral;
 }
-
-.video h1 {
-     font-family: futuraBold;
-     font-size: 32px;
-    color: lightseagreen;
-     display: block;
-     text-align: center;
-     padding: 2em 0 1em 0;
- }
 
 .turtle {
     position: relative;
@@ -156,13 +176,8 @@ ul li a {
     height: 100%;
 }
 
-.shows h1 {
-    font-family: futuraBold;
-    font-size: 32px;
-    color: lightcoral;
-    display: block;
-    text-align: center;
-    padding: 2em 0 1em 0;
+.shows {
+    //background-color: #02D69D;
 }
 
 .shows-container {
@@ -187,12 +202,15 @@ ul li a {
 }
 
 /*imprint.html*/
+.logo {
+    text-align: center;
+}
 .imprint-content {
     width: 100%;
     padding: 4em 0 4em 0;
 }
 
-.imprint-content h1 {
+.imprint-content h2 {
     font-size: 18px;
     padding: 2em 2em 0 2em;
     font-family: futura;
@@ -220,9 +238,25 @@ ul li a {
 }
 
 @media only screen and (min-width: 768px) {
+    .type {
+        display: block;
+    }
+
+    h1 {
+        padding: 4em 0 1em 0;
+    }
+
+    .about-container {
+        padding: 0 10em 0em 10em;
+    }
+
     .vinyl-container {
         height: auto;
         max-width: 100%;
+        padding: 0 10em 2em 10em;
+    }
+
+    .music p {
         padding: 0 10em 2em 10em;
     }
 
@@ -232,7 +266,29 @@ ul li a {
 }
 
 @media only screen and (min-width: 1024px) {
-    .imprint-content h1 {
+    .type {
+        display: block;
+    }
+
+    .about-container {
+        padding: 0 198px 0em 198px;
+    }
+
+    .vinyl-container {
+        height: auto;
+        max-width: 100%;
+        padding: 0 198px 3em 198px;
+    }
+
+    .music p {
+        padding: 0 198px 3em 198px;
+    }
+
+    .video {
+        padding: 0 198px 4em 198px;
+    }
+
+    .imprint-content h2 {
     font-size: 18px;
     padding: 3em 198px 0 198px;
     font-family: futura;
@@ -248,24 +304,40 @@ ul li a {
 }
 
 @media only screen and (min-width: 1280px) {
+    .type {
+        display: block;
+    }
+
+    h1 {
+        padding: 4em 0 2em 0;
+    }
+
+    .about-container {
+        padding: 0 420px 0em 420px;
+    }
+
     .vinyl-container {
         height: auto;
         max-width: 100%;
-        padding: 0 360px 2em 360px;
+        padding: 0 420px 2em 420px;
+    }
+
+    .music p {
+        padding: 0 420px 3em 420px;
     }
 
     .video {
-        padding: 0 360px 4em 360px;
+        padding: 0 420px 4em 420px;
     }
     
-    .imprint-content h1 {
+    .imprint-content h2 {
         font-size: 18px;
-        padding: 3em 360px 0 360px;
+        padding: 3em 420px 0 420px;
         font-family: futura;
     }
 
     .imprint-content p {
-        padding: 1em 360px;
+        padding: 1em 420px;
         font-family: futura;
         text-align: left;
         color: black;
@@ -274,17 +346,29 @@ ul li a {
 }
 
 @media only screen and (min-width: 1920px) {
+    .type {
+        display: block;
+    }
+
+    .about-container {
+        padding: 0 560px 0em 560px;
+    }
+
     .vinyl-container {
         height: auto;
         max-width: 100%;
         padding: 0 560px 2em 560px;
     }
 
+    .music p {
+        padding: 0 560px 3em 560px;
+    }
+
     .video {
         padding: 0 560px 4em 560px;
     }
 
-    .imprint-content h1 {
+    .imprint-content h2 {
         font-size: 18px;
         padding: 3em 560px 0 560px;
         font-family: futura;
