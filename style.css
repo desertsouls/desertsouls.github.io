@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 @font-face {
-    src: url("fonts/FuturaStd-Book.otf");
-    font-family: futura;
+    src: url("fonts/AfaratibnBlady.ttf");
+    font-family: afarat;
 }
 
 @font-face {
-    src: url("fonts/FuturaStd-Bold.otf");
-    font-family: futuraBold;
+    src: url("fonts/comic.ttf");
+    font-family: comic;
 }
 
 html,
@@ -40,7 +40,6 @@ nav {
 
 .type-content {
     margin-top: 1.4em;
-    font-family: futuraBold;
     color: white;
     text-decoration: none;
 }
@@ -65,6 +64,8 @@ nav {
 }
 
 .menu ul li a {
+    font-family: afarat;
+    font-weight: bold;
     padding: 0em 1em 0 1em;
     display: block;
 }
@@ -79,11 +80,12 @@ nav {
 }
 
 h1 {
-    font-family: futuraBold;
-    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 48px;
     display: block;
     text-align: center;
-    padding: 2em 0 1em 0;
+    padding: 1em 0 1em 0;
 }
 
 .about {
@@ -96,12 +98,11 @@ h1 {
 }
 
 .about-container p {
-    font-family: futura;
     color: black;
     line-height: 1.8;
 }
 
-.swit {
+.fart {
     color: black;
 }
 
@@ -122,7 +123,6 @@ h1 {
 }
 
 .music p {
-    font-family: futura;
     padding: 0 2em 2em;
     line-height: 2;
 }
@@ -187,7 +187,6 @@ h1 {
 }
 
 .shows-container p {
-    font-family: futura;
 }
 
 .impressum-content {
@@ -195,8 +194,8 @@ h1 {
 }
 
 .impressum-content a {
-    font-family: futura;
-    color: black;
+    font-size: 32px;
+    text-decoration: none;
     display: block;
     text-align: center;
 }
@@ -204,6 +203,10 @@ h1 {
 /*imprint.html*/
 .logo {
     text-align: center;
+}
+
+.imprint {
+    background-color: red;
 }
 .imprint-content {
     width: 100%;
@@ -213,14 +216,15 @@ h1 {
 .imprint-content h2 {
     font-size: 18px;
     padding: 2em 2em 0 2em;
-    font-family: futura;
+    font-family: comic;
+    color: magenta;
 }
 
 .imprint-content p {
     padding: 1em 36px;
-    font-family: futura;
+    font-family: comic;
+    color: magenta;
     text-align: left;
-    color: black;
     line-height: 1.4;  
 }
 
@@ -230,8 +234,9 @@ h1 {
 }
 
 .footer-info p {
+    font-family: sans-serif;
+    font-weight: bold;
     color: white;
-    font-family: futura;
     font-size: 20px;
     text-align: center;
 
@@ -243,7 +248,7 @@ h1 {
     }
 
     h1 {
-        padding: 4em 0 1em 0;
+        padding: 2em 0 1em 0;
     }
 
     .about-container {
@@ -289,27 +294,17 @@ h1 {
     }
 
     .imprint-content h2 {
-    font-size: 18px;
-    padding: 3em 198px 0 198px;
-    font-family: futura;
+        padding: 3em 198px 0 198px;
     }
 
     .imprint-content p {
         padding: 1em 198px;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;  
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .type {
         display: block;
-    }
-
-    h1 {
-        padding: 4em 0 2em 0;
     }
 
     .about-container {
@@ -331,17 +326,11 @@ h1 {
     }
     
     .imprint-content h2 {
-        font-size: 18px;
         padding: 3em 420px 0 420px;
-        font-family: futura;
     }
 
     .imprint-content p {
         padding: 1em 420px;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;  
     }
 }
 
@@ -369,16 +358,10 @@ h1 {
     }
 
     .imprint-content h2 {
-        font-size: 18px;
         padding: 3em 560px 0 560px;
-        font-family: futura;
     }
 
     .imprint-content p {
         padding: 1em 560px;
-        font-family: futura;
-        text-align: left;
-        color: black;
-        line-height: 1.4;  
     }
 }
