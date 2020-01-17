@@ -83,7 +83,6 @@ h1 {
     font-family: sans-serif;
     font-weight: 900;
     font-size: 48px;
-    text-transform: uppercase;
     text-align: center;
     display: block;
     padding: 1.5em 0 1em 0;
@@ -139,6 +138,14 @@ h1 {
 .spotify-container {
     display: block;
     text-align: center;
+}
+
+.spotify-container iframe {
+    border: 5px gold solid;
+    min-width: 300px;
+    max-width: 900px;
+
+
 }
 
 .video {
