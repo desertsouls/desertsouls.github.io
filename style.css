@@ -136,16 +136,12 @@ h1 {
 }
 
 .spotify-container {
-    display: block;
     text-align: center;
 }
 
 .spotify-container iframe {
+    margin: 0 2em 0 2em;
     border: 5px gold solid;
-    min-width: 300px;
-    max-width: 900px;
-
-
 }
 
 .video {
@@ -195,6 +191,7 @@ h1 {
 }
 
 .shows-container p {
+    line-height: 1.8;
 }
 
 .impressum-content {
@@ -202,6 +199,8 @@ h1 {
 }
 
 .impressum-content a {
+    font-family: sans-serif;
+    font-weight: bold;
     color: black;
     display: block;
     text-align: center;
