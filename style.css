@@ -18,15 +18,14 @@ html * {
 
 nav {
     width: 100%;
-    height: 4em;
+    height: 64px;
     background-color: black;
     position: fixed;
     z-index: 1;
 }
 
 .logo-content {
-    width: 30px;
-    padding-top: 1em;
+    height: 32px;
 }
 
 .type {
@@ -34,7 +33,9 @@ nav {
 }
 
 .type-content {
-    margin-top: 1.4em;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
@@ -52,6 +53,7 @@ nav {
     width: 100%;
     text-align: center;
     text-decoration: none;
+    padding-top: 16px;
 }
 
 .menu ul li {
@@ -59,15 +61,13 @@ nav {
 }
 
 .menu ul li a {
-    font-family: afarat;
-    font-weight: bold;
-    padding: 0em 1em 0 1em;
+    padding: 0px 12px 0 12px;
     display: block;
 }
 
 /*index.html*/
 .header-img {
-    padding-top: 4em;
+    padding: 64px 0 32px 0;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -77,19 +77,20 @@ nav {
 h1 {
     font-family: sans-serif;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
     display: block;
-    padding: 1.5em 0 1em 0;
+    padding: 32px 0 32px 0;
 }
 
-.about {
-    //background-color: gold;
-}
+/*.about {
+    background-color: gold;
+    background-image: linear-gradient(gold, lightseagreen);
+}*/
 
 .about-container {
     display: block;
-    padding: 0em 2em 0em 2em;
+    padding: 0 32px 32px 32px;
 }
 
 .about-container p {
@@ -97,18 +98,15 @@ h1 {
     line-height: 1.8;
 }
 
-.fart {
-    color: black;
-}
-
-.music {
-    //background-color: lightseagreen;
-}
+/*.music {
+    background-color: lightseagreen;
+    background-image: linear-gradient(lightseagreen, lightcoral);
+}*/
 
 .vinyl-container {
     height: auto;
     max-width: 100%;
-    padding: 0 2em 2em 2em;
+    padding: 0 32px 32px 32px;
 }
 
 .vinyl-img {
@@ -118,7 +116,7 @@ h1 {
 }
 
 .music p {
-    padding: 0 2em 2em;
+    padding: 0 32px 32px;
     line-height: 2;
 }
 
@@ -132,16 +130,18 @@ h1 {
 
 .spotify-container {
     text-align: center;
+    padding-bottom: 32px;
 }
 
 .spotify-container iframe {
-    margin: 0 2em 0 2em;
+    margin: 0 32px 0 32px;
     border: 5px gold solid;
 }
 
 .video {
-    padding: 0 2em 4em 2em;
+    padding: 0 32px 64px 32px;
     //background-color: lightcoral;
+    //background-image: linear-gradient(lightcoral, #02D69D);
 }
 
 .turtle {
@@ -168,21 +168,21 @@ h1 {
 
 .kegelbahn iframe {
     position: absolute;
-    padding-top: 2em;
+    padding-top: 32px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
-.shows {
-    //background-color: #02D69D;
-}
+/*.shows {
+    background-color: #02D69D;
+}*/
 
 .shows-container {
     display: block;
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 48px;
 }
 
 .shows-container p {
@@ -190,7 +190,8 @@ h1 {
 }
 
 .impressum-content {
-    padding: 3em;
+    //background-color: #02D69D;
+    padding: 48px;
 }
 
 .impressum-content a {
@@ -211,18 +212,18 @@ h1 {
 }
 .imprint-content {
     width: 100%;
-    padding: 4em 0 4em 0;
+    padding: 64px 0 64px 0;
 }
 
 .imprint-content h2 {
     font-size: 18px;
-    padding: 2em 2em 0 2em;
+    padding: 36px 36px 0 36px;
     font-family: comic;
     color: magenta;
 }
 
 .imprint-content p {
-    padding: 1em 36px;
+    padding: 16px 36px;
     font-family: comic;
     color: magenta;
     text-align: left;
@@ -230,7 +231,7 @@ h1 {
 }
 
 .footer-info {
-    padding: 3em;
+    padding: 48px;
     background-color: black;
 }
 
@@ -244,30 +245,27 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-    .type {
-        display: block;
-    }
-
     h1 {
-        padding: 2em 0 1em 0;
+        font-size: 40px;
+        padding: 64px 0 32px 0;
     }
 
     .about-container {
-        padding: 0 10em 0em 10em;
+        padding: 0 160px 32px 160px;
     }
 
     .vinyl-container {
         height: auto;
         max-width: 100%;
-        padding: 0 10em 2em 10em;
+        padding: 0 160px 32px 160px;
     }
 
     .music p {
-        padding: 0 10em 2em 10em;
+        padding: 0 160px 32px 160px;
     }
 
     .video {
-        padding: 0 10em 4em 10em;
+        padding: 0 160px 64px 160px;
     }
 }
 
@@ -276,62 +274,98 @@ h1 {
         display: block;
     }
 
+    h1 {
+        font-size: 48px;
+    }
+
     .about-container {
-        padding: 0 198px 0em 198px;
+        padding: 0 220px 32px 220px;
     }
 
     .vinyl-container {
         height: auto;
         max-width: 100%;
-        padding: 0 198px 3em 198px;
+        padding: 0 220px 48px 220px;
     }
 
     .music p {
-        padding: 0 198px 3em 198px;
+        padding: 0 220px 48px 220px;
     }
 
     .video {
-        padding: 0 198px 4em 198px;
+        padding: 0 220px 48px 220px;
     }
 
     .imprint-content h2 {
-        padding: 3em 198px 0 198px;
+        padding: 48px 220px 0 220px;
     }
 
     .imprint-content p {
-        padding: 1em 198px;
+        padding: 16px 220px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .type {
-        display: block;
+    .menu ul li a {
+        padding: 0 18px 0 18px;
     }
 
     .about-container {
-        padding: 0 420px 0em 420px;
+        padding: 0 300px 32px 300px;
     }
 
     .vinyl-container {
         height: auto;
         max-width: 100%;
-        padding: 0 420px 2em 420px;
+        padding: 0 300px 64px 300px;
     }
 
     .music p {
-        padding: 0 420px 3em 420px;
+        padding: 0 300px 48px 300px;
     }
 
     .video {
-        padding: 0 420px 4em 420px;
+        padding: 0 300px 64px 300px;
     }
     
     .imprint-content h2 {
-        padding: 3em 420px 0 420px;
+        padding: 48px 300px 0 300px;
     }
 
     .imprint-content p {
-        padding: 1em 420px;
+        padding: 16px 300px;
+    }
+}
+
+@media only screen and (min-width: 1529px) {
+    .menu ul li a {
+        padding: 0 16px 0 16px;
+    }
+
+    .about-container {
+        padding: 0 440px 32px 440px;
+    }
+
+    .vinyl-container {
+        height: auto;
+        max-width: 100%;
+        padding: 0 440px 64px 440px;
+    }
+
+    .music p {
+        padding: 0 440px 48px 440px;
+    }
+
+    .video {
+        padding: 0 440px 64px 440px;
+    }
+
+    .imprint-content h2 {
+        padding: 48px 440px 0 440px;
+    }
+
+    .imprint-content p {
+        padding: 16px 440px;
     }
 }
 
@@ -341,28 +375,28 @@ h1 {
     }
 
     .about-container {
-        padding: 0 560px 0em 560px;
+        padding: 0 640px 32px 640px;
     }
 
     .vinyl-container {
         height: auto;
         max-width: 100%;
-        padding: 0 560px 2em 560px;
+        padding: 0 640px 32px 640px;
     }
 
     .music p {
-        padding: 0 560px 3em 560px;
+        padding: 0 640px 32px 640px;
     }
 
     .video {
-        padding: 0 560px 4em 560px;
+        padding: 0 640px 64px 640px;
     }
 
     .imprint-content h2 {
-        padding: 3em 560px 0 560px;
+        padding: 48px 640px 0 640px;
     }
 
     .imprint-content p {
-        padding: 1em 560px;
+        padding: 16px 640px;
     }
 }
